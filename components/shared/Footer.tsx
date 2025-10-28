@@ -5,15 +5,14 @@ import Link from "next/link";
 import logo from "@/assets/r2rcarepurple.png";
 import leftImage from "@/assets/leftImage.png";
 import rightImage from "@/assets/rightImage.png";
-import contactus from "@/assets/contactus.png";
+import contactus from "@/assets/contact.png";
 import pin from "@/assets/pin.png";
 import msg from "@/assets/msg.png";
-import phone from "@/assets/phone.png"; // fixed phone import
+import phone from "@/assets/phone.png";
 
 const Footer = () => {
   return (
-    <footer className="relative w-full bg-[#77429A] text-white overflow-visible pt-[100px]">
-      {/* 💜 Top Gradient Section (Floating CTA) */}
+    <footer className="relative w-full bg-[#77429A] text-white overflow-visible pt-[100px] mt-[200px]   font-sans">
       <div className="absolute left-1/2 -translate-x-1/2 -top-[180px] sm:-top-40 md:-top-[180px] z-10 w-full flex justify-center px-4">
         <div className="max-w-[1290px] w-full relative flex flex-col items-center justify-center text-center rounded-2xl p-6 sm:p-10 shadow-lg h-auto sm:h-[326px] bg-linear-to-b from-[#77429A] to-[#E6D7FF]">
           {/* Background images */}
@@ -57,8 +56,8 @@ const Footer = () => {
           <Image
             src={contactus}
             alt="Customer Care Icon"
-            width={36}
-            height={36}
+            width={35}
+            height={35}
             className="object-contain"
           />
         </button>

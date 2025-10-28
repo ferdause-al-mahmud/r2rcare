@@ -7,13 +7,34 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/r2rLogo.png";
 import { navlinks } from "@/const/navlinks";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="w-full border-b border-gray-100">
+    <header
+      className={cn(
+        "w-full z-50 top-0 transition-all duration-300   font-sans",
+        isScrolled
+          ? "fixed backdrop-blur-md bg-white/70 shadow-sm"
+          : "absolute bg-transparent"
+      )}
+    >
       {/* Top info bar */}
       <div className="max-w-[1890px] mx-auto bg-[#77429A] text-white text-xs py-1.5 my-1.5 flex items-center justify-center rounded-lg font-normal tracking-tight">
         <span className="flex items-center gap-1">
@@ -43,7 +64,7 @@ const Navbar = () => {
       </div>
 
       {/* Main navigation */}
-      <nav className="max-w-[1290px] mx-auto flex items-center justify-between px-6 sm:px-8 py-4 bg-white relative">
+      <nav className="max-w-[1290px] mx-auto flex items-center justify-between px-6 sm:px-8 py-4 relative">
         {/* Left: Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
@@ -52,7 +73,7 @@ const Navbar = () => {
             width={180}
             height={60}
             priority
-            className="object-contain"
+            className="object-contain w-28 sm:w-36 md:w-44 lg:w-52 xl:w-60 h-auto"
           />
         </Link>
 
@@ -104,7 +125,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white shadow-md border-t border-gray-100 md:hidden z-50 animate-slideDown">
+          <div className="absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-md border-t border-gray-100 md:hidden z-50 transition-all duration-300">
             <div className="flex flex-col items-start gap-4 px-6 py-4">
               {navlinks.map((item) => (
                 <div
