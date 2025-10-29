@@ -1,4 +1,6 @@
+import AboutUs from "@/components/homepage/AboutUs/AboutUs";
 import Banner from "@/components/homepage/Banner/Banner";
+import Faq from "@/components/homepage/Faq/Faq";
 import Functionality from "@/components/homepage/Functionality/Functionality";
 import Growth from "@/components/homepage/Growth/Growth";
 import Plans from "@/components/homepage/Plans/Plans";
@@ -11,6 +13,8 @@ const page = () => {
       <Growth />
       <Functionality />
       <Plans />
+      <AboutUs />
+      <Faq />
     </div>
   );
 };
