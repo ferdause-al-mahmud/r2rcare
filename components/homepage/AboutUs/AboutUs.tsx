@@ -8,6 +8,7 @@ import Devid from "@/assets/David Chen.jpg";
 import Laura from "@/assets/Laura Evans.jpg";
 import Rachel from "@/assets/Rachel Adams.jpg";
 import Tom from "@/assets/Tom Williams.jpg";
+import ReviewCard from "@/components/Cards/ReviewCard";
 
 const testimonials = [
   {
@@ -94,33 +95,7 @@ const AboutUs = () => {
         {/* ---------- RIGHT SIDE ---------- */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
           {testimonials.map((item, idx) => (
-            <div
-              key={idx}
-              className={`bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex flex-col justify-between transition-transform hover:-translate-y-1 duration-200 ${
-                item.column === "left"
-                  ? "border-t-4 border-b-4 border-[#E6D7FF]"
-                  : ""
-              }`}
-            >
-              <p className="text-sm text-[#5F5D75] leading-relaxed mb-4">
-                {item.text}
-              </p>
-              <div className="flex items-center gap-3 mt-auto">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  width={40}
-                  height={40}
-                  className="rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-medium text-[#161C52] text-sm">
-                    {item.name}
-                  </p>
-                  <p className="text-xs text-[#5F5D75]">{item.title}</p>
-                </div>
-              </div>
-            </div>
+            <ReviewCard key={idx} item={item} />
           ))}
         </div>
       </div>
