@@ -54,4 +54,19 @@ export const blogs = [
         description: "How care software enhances and empowers your team.",
         image: bg3,
     },
+    {
+        title: "Going Digital",
+        description: "What’s digital care? Trends, tools, and best practices.",
+        image: bg1,
+    },
+    {
+        title: "Service Efficiency",
+        description: "What are good staffing solutions for care teams?",
+        image: bg2,
+    },
+    {
+        title: "Staff Productivity",
+        description: "How care software enhances and empowers your team.",
+        image: bg3,
+    },
 ];

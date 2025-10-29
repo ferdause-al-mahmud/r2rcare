@@ -19,12 +19,12 @@ const Footer = () => {
           <Image
             src={leftImage}
             alt="Left decorative"
-            className="absolute left-0 top-0 w-[120px] sm:w-[180px] md:w-[220px] opacity-30 select-none pointer-events-none"
+            className="absolute left-0 top-0 w-[120px] sm:w-[180px] md:w-[220px] opacity-40 mix-blend-luminosity select-none pointer-events-none"
           />
           <Image
             src={rightImage}
             alt="Right decorative"
-            className="absolute right-0 bottom-0 w-[120px] sm:w-[180px] md:w-[220px] opacity-30 select-none pointer-events-none"
+            className="absolute right-0 bottom-0 w-[120px] sm:w-[180px] md:w-[220px] opacity-40 mix-blend-luminosity select-none pointer-events-none"
           />
 
           {/* Text Content */}

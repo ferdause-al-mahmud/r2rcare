@@ -158,7 +158,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="hidden sm:block absolute left-0 bottom-0 opacity-35 ">
+        <div className="hidden sm:block absolute left-0 bottom-0 opacity-40 mix-blend-luminosity ">
           <Image
             src={righthalf}
             alt="left"
@@ -167,7 +167,7 @@ const Banner = () => {
             className="w-full h-full object-contain opacity-80"
           />
         </div>
-        <div className="hidden sm:block absolute right-0 top-0 opacity-35 ">
+        <div className="hidden sm:block absolute right-0 top-0 opacity-40 mix-blend-luminosity ">
           <Image
             src={lefthalf}
             alt="right"
