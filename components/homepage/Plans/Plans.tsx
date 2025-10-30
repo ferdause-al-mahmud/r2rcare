@@ -45,16 +45,21 @@ const Plans = () => {
     <section className="w-full bg-white py-16 md:py-20 lg:py-24">
       <div className="max-w-[1290px] mx-auto px-8 text-center">
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#161C52]">
-          Choose Your Plan:{" "}
-          <span className="italic font-serif text-[#77429A] font-normal">
-            Flexible Pricing Options
-          </span>
-        </h2>
-        <p className="text-sm md:text-base text-[#5F5D75] mt-3 max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-        </p>
+        <div className="text-center mt-4 md:mt-6 lg:mt-8 mb-4 md:mb-8 lg:mb-12">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#1B2140] leading-tight">
+            Choose Your Plan:
+          </h1>
+          <h2 className="mt-2 text-xl sm:text-2xl md:text-3xl lg:text-5xl text-[#1B2140] font-medium italic">
+            <span className="not-italic font-medium">Flexible</span>{" "}
+            <span className="font-serif text-[#6B3C8B] font-bold!">
+              Pricing Options
+            </span>
+          </h2>
+          <p className="max-w-[780px] mx-auto mt-3 md:mt-4 text-sm sm:text-base text-[#5F5D75] px-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
 
         {/* Cards */}
         <div className="relative mt-12 flex flex-col lg:flex-row justify-center items-stretch w-full">
