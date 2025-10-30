@@ -18,7 +18,7 @@ const BlogPage = () => {
       <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#161C52] mb-3 sm:mb-5">
         Blogs
       </h2>
-      <p className="text-xs sm:text-sm md:text-base text-[#5F5D75] max-w-xl sm:max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
+      <p className="text-xs sm:text-sm md:text-base text-[#5F5D75] max-w-xl sm:max-w-2xl mx-auto mb-8 sm:mb-[120px] leading-relaxed">
         Get advice from our community of medical care experts. Read about
         everyday research, discover new trends, and learn best practices.
       </p>
