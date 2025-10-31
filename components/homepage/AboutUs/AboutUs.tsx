@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Star } from "lucide-react";
 
 import Anna from "@/assets/Anna Rodriguez.jpg";
@@ -57,7 +56,7 @@ const testimonials = [
 
 const AboutUs = () => {
   return (
-    <section className="bg-gradient-to-b from-purple-200 to-white py-16 md:py-24">
+    <section className="bg-linear-to-b from-purple-200 to-white py-16 md:py-24">
       <div className="max-w-[1290px] mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 items-start">
         {/* ---------- LEFT SIDE ---------- */}
         <div className="flex flex-col justify-start">

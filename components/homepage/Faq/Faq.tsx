@@ -72,7 +72,7 @@ const Faq: React.FC = () => {
                     onClick={() => toggle(f.id)}
                     className={
                       // pill style, open uses purple background with white text
-                      `w-full flex items-center gap-4 rounded-full px-6 py-4 text-left text-sm md:text-base font-medium transition-all duration-250 outline-none focus:ring-4 
+                      `w-full flex cursor-pointer items-center gap-4 rounded-full px-6 py-4 text-left text-sm md:text-base font-medium transition-all duration-250 outline-none focus:ring-4 
                       ${
                         isOpen
                           ? "bg-[#77429A] text-white shadow"

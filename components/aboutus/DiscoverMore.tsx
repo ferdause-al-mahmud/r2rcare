@@ -22,7 +22,7 @@ const DiscoverMore = () => {
           {filters.map((filter, index) => (
             <button
               key={index}
-              className={`px-5 sm:px-6 py-2 sm:py-3 text-sm font-medium rounded-full transition-all duration-200 ${
+              className={`px-5 cursor-pointer sm:px-6 py-2 sm:py-3 text-sm font-medium rounded-full transition-all duration-200 ${
                 index === 0
                   ? "bg-[#77429A] text-white shadow-sm"
                   : "text-[#161C52] hover:text-[#77429A] hover:bg-[#F3E8FF]"
@@ -59,7 +59,7 @@ const DiscoverMore = () => {
             achievements every day.
           </p>
 
-          <button className="mt-6 px-6 py-3 bg-[#77429A] text-white rounded-full text-sm font-medium transition-all hover:bg-[#6B3C8B]">
+          <button className="mt-6 px-6 py-3 cursor-pointer bg-[#77429A] text-white rounded-full text-sm font-medium transition-all hover:bg-[#6B3C8B]">
             Explore Our Profiles
           </button>
         </div>

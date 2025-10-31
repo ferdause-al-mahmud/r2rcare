@@ -161,7 +161,7 @@ const Plans = () => {
 
               {/* Button */}
               <button
-                className={`mt-8 w-full py-3 rounded-full text-sm font-medium transition-all ${
+                className={`mt-8 w-full py-3 rounded-full text-sm font-medium  cursor-pointer transition-all ${
                   plan.highlight
                     ? "bg-[#77429A] text-white hover:bg-[#6B3D8C]"
                     : "bg-[#77429A] text-white hover:bg-[#6B3D8C]"

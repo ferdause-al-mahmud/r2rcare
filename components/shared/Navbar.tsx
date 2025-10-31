@@ -64,7 +64,7 @@ const Navbar = () => {
       </div>
 
       {/* Main navigation */}
-      <nav className="max-w-[1290px] mx-auto flex items-center justify-between px-6 sm:px-8 py-4 relative">
+      <nav className="max-w-[1290px] mx-auto flex items-center justify-between px-6 sm:px-8 py-2 relative">
         {/* Left: Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
@@ -73,7 +73,7 @@ const Navbar = () => {
             width={180}
             height={60}
             priority
-            className="object-contain w-28 sm:w-36 md:w-44 lg:w-52 xl:w-60 h-auto"
+            className="object-contain w-28 sm:w-36 md:w-44 lg:w-48 h-auto"
           />
         </Link>
 
@@ -102,14 +102,14 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-3">
           <Button
             className={cn(
-              "bg-[#77429A] hover:bg-[#6A3D8C] text-white rounded-full px-6 py-2 text-[15px] font-medium transition-colors duration-200"
+              "bg-[#77429A] hover:bg-[#6A3D8C]  cursor-pointer text-white rounded-full px-6 py-2 text-[15px] font-medium transition-colors duration-200"
             )}
           >
             Book A Demo
           </Button>
           <Button
             variant="outline"
-            className="border-[#77429A] text-[#77429A] rounded-full px-6 py-2 text-[15px] font-medium hover:bg-[#F9F5FC] transition-colors duration-200"
+            className="border-[#77429A] text-[#77429A]  cursor-pointer rounded-full px-6 py-2 text-[15px] font-medium hover:bg-[#F9F5FC] transition-colors duration-200"
           >
             Login
           </Button>
@@ -146,12 +146,12 @@ const Navbar = () => {
               </Link>
 
               <div className="flex flex-col w-full gap-3 mt-3">
-                <Button className="w-full bg-[#77429A] hover:bg-[#6A3D8C] text-white rounded-full text-[15px] font-medium">
+                <Button className="w-full bg-[#77429A] hover:bg-[#6A3D8C]  cursor-pointer text-white rounded-full text-[15px] font-medium">
                   Book A Demo
                 </Button>
                 <Button
                   variant="outline"
-                  className="w-full border-[#77429A] text-[#77429A] rounded-full text-[15px] font-medium hover:bg-[#F9F5FC]"
+                  className="w-full border-[#77429A] text-[#77429A] cursor-pointer rounded-full text-[15px] font-medium hover:bg-[#F9F5FC]"
                 >
                   Login
                 </Button>

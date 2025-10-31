@@ -40,10 +40,10 @@ const Footer = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <button className="bg-[#77429A] hover:bg-[#6B3C8B] text-white rounded-full px-6 py-2 text-sm font-medium transition-all">
+            <button className="bg-[#77429A]  cursor-pointer hover:bg-[#6B3C8B] text-white rounded-full px-6 py-2 text-sm font-medium transition-all">
               Learn More
             </button>
-            <button className="border border-white hover:bg-white hover:text-[#77429A] text-white rounded-full px-6 py-2 text-sm font-medium transition-all">
+            <button className="border  cursor-pointer border-white hover:bg-white hover:text-[#77429A] text-white rounded-full px-6 py-2 text-sm font-medium transition-all">
               Get Started
             </button>
           </div>
@@ -51,8 +51,8 @@ const Footer = () => {
       </div>
 
       {/* 💬 Floating Customer Care Icon */}
-      <div className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-50">
-        <button className="relative   bg-linear-to-b from-[#77429A] to-[#E6D7FF] rounded-full shadow-xl p-3 sm:p-4 hover:scale-105 transition-transform">
+      <div className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-50 ">
+        <button className="relative  cursor-pointer  bg-linear-to-b from-[#77429A] to-[#E6D7FF] rounded-full shadow-xl p-3 sm:p-4 hover:scale-105 transition-transform">
           <Image
             src={contactus}
             alt="Customer Care Icon"

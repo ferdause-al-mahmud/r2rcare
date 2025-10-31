@@ -51,7 +51,7 @@ const Banner = () => {
             </p>
 
             <div className="mt-4 md:mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4">
-              <button className="inline-flex items-center gap-3 bg-[#77429A] hover:bg-[#6A3D8C] text-white px-5 py-3 rounded-full text-sm font-medium shadow transition-colors w-full sm:w-auto justify-center">
+              <button className="inline-flex items-center gap-3 bg-[#77429A] hover:bg-[#6A3D8C] text-white px-5 py-3 rounded-full text-sm font-medium shadow transition-colors w-full sm:w-auto justify-center  cursor-pointer">
                 Get 15 Day Trial
               </button>
 

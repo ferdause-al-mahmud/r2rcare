@@ -33,10 +33,12 @@ const Growth = () => {
         {growth.map((card, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center rounded-3xl overflow-hidden h-full"
+            className="flex flex-col items-center text-center rounded-3xl overflow-hidden h-full relative"
           >
+            <div className="w-full h-[260px] md:h-[280px] lg:h-[300px]  absolute mix-blend-hue bg-purple-800 rounded-md"></div>
+
             <div
-              className={`${card.bg} flex items-center justify-center rounded-3xl w-full h-[260px] md:h-[280px] lg:h-[300px] p-6 md:p-8`}
+              className={`${card.bg}  flex items-center justify-center rounded-3xl w-full h-[260px] md:h-[280px] lg:h-[300px] p-6 md:p-8`}
             >
               <Image
                 src={card.img}
@@ -62,7 +64,9 @@ const Growth = () => {
       {/*  Management App */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center my-20">
         {/* Left Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center relative">
+          <div className="w-full max-w-[580px] h-full absolute mix-blend-hue bg-purple-800 rounded-md"></div>
+
           <div className="bg-[#EDE5FF] rounded-3xl p-6 md:p-8 lg:p-10 w-full max-w-[580px] shadow-sm">
             <Image
               src={analyticssale}
@@ -90,7 +94,7 @@ const Growth = () => {
           {/* Features */}
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
-              <div className="flex items-center justify-center bg-[#D7B7FF] w-8 h-8 rounded-full flex-shrink-0">
+              <div className="flex items-center justify-center bg-[#D7B7FF] w-8 h-8 rounded-full shrink-0">
                 <Image src={team} alt="Team" width={50} height={50} />
               </div>
               <p className="text-sm md:text-base text-[#161C52]">
@@ -100,7 +104,7 @@ const Growth = () => {
             </li>
 
             <li className="flex items-start gap-3">
-              <div className="flex items-center justify-center bg-[#FAD0E5] w-8 h-8 rounded-full flex-shrink-0">
+              <div className="flex items-center justify-center bg-[#FAD0E5] w-8 h-8 rounded-full shrink-0">
                 <Image src={client} alt="Client" width={50} height={50} />
               </div>
               <p className="text-sm md:text-base text-[#161C52]">
@@ -110,7 +114,7 @@ const Growth = () => {
             </li>
 
             <li className="flex items-start gap-3">
-              <div className="flex items-center justify-center bg-[#D4F5D9] w-8 h-8 rounded-full flex-shrink-0">
+              <div className="flex items-center justify-center bg-[#D4F5D9] w-8 h-8 rounded-full shrink-0">
                 <Image src={insight} alt="Reports" width={50} height={50} />
               </div>
               <p className="text-sm md:text-base text-[#161C52]">
@@ -140,7 +144,7 @@ const Growth = () => {
           {/* Features */}
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
-              <div className="flex items-center justify-center bg-[#D7B7FF] w-8 h-8 rounded-full flex-shrink-0">
+              <div className="flex items-center justify-center bg-[#D7B7FF] w-8 h-8 rounded-full shrink-0">
                 <Image src={record} alt="Record" width={50} height={50} />
               </div>
               <p className="text-sm md:text-base text-[#161C52]">
@@ -151,7 +155,7 @@ const Growth = () => {
             </li>
 
             <li className="flex items-start gap-3">
-              <div className="flex items-center justify-center bg-[#FAD0E5] w-8 h-8 rounded-full flex-shrink-0">
+              <div className="flex items-center justify-center bg-[#FAD0E5] w-8 h-8 rounded-full shrink-0">
                 <Image src={access} alt="Access" width={50} height={50} />
               </div>
               <p className="text-sm md:text-base text-[#161C52]">
@@ -162,7 +166,7 @@ const Growth = () => {
             </li>
 
             <li className="flex items-start gap-3">
-              <div className="flex items-center justify-center bg-[#D4F5D9] w-8 h-8 rounded-full flex-shrink-0">
+              <div className="flex items-center justify-center bg-[#D4F5D9] w-8 h-8 rounded-full shrink-0">
                 <Image src={organized} alt="Organized" width={50} height={50} />
               </div>
               <p className="text-sm md:text-base text-[#161C52]">
@@ -177,6 +181,8 @@ const Growth = () => {
         {/* Right Image */}
         <div className="flex justify-center order-1 lg:order-2">
           <div className="bg-[#EDE5FF] rounded-3xl p-6 md:p-8 lg:p-10 w-full max-w-[580px] shadow-sm border border-[#CBB8FF]">
+            <div className="w-full max-w-[580px] h-full absolute mix-blend-hue bg-purple-800 rounded-md"></div>
+
             <Image
               src={overview}
               alt="Candidate App"

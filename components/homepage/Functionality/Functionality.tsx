@@ -59,7 +59,7 @@ const Functionality = () => {
           {functionalities.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col items-start text-left p-6 rounded-xl border  ${
+              className={`flex flex-col items-start text-left p-6 rounded-xl border  cursor-pointer  ${
                 item.active
                   ? "bg-[#E6D7FF] border-white "
                   : "border-[#8D5FB7] bg-transparent hover:bg-[#8251A8] transition-colors"

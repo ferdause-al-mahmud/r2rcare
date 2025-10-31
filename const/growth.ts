@@ -9,13 +9,13 @@ export const growth = [
         bg: "bg-[#E8EBFF]",
     },
     {
-        img: sales,
+        img: report,
         title: "Personalized, Secure Care",
         desc: "Deliver individualized care while keeping sensitive data safe with robust security and compliance measures.",
-        bg: "bg-[#F5E5FF]",
+        bg: "bg-[#F5E5FF] ",
     },
     {
-        img: report,
+        img: sales,
         title: "Smarter Reporting & Insights",
         desc: "Generate comprehensive reports effortlessly and access real-time insights to stay compliant and make better decisions.",
         bg: "bg-[#E8F5E5]",
