@@ -179,13 +179,13 @@ const Growth = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center order-1 lg:order-2">
-          <div className="bg-[#EDE5FF] rounded-3xl p-6 md:p-8 lg:p-10 w-full max-w-[580px] shadow-sm border border-[#CBB8FF]">
-            <div className="w-full max-w-[580px] h-full absolute mix-blend-hue bg-purple-800 rounded-md"></div>
+        <div className="flex flex-col sm:flex-row-reverse justify-center relative">
+          <div className="w-full max-w-[580px] h-full absolute mix-blend-hue bg-purple-800 rounded-md"></div>
 
+          <div className="bg-[#EDE5FF] rounded-3xl p-6 md:p-8 lg:p-10 w-full max-w-[580px] shadow-sm">
             <Image
               src={overview}
-              alt="Candidate App"
+              alt="Web App Dashboard"
               className="w-full h-auto object-contain rounded-2xl"
             />
           </div>

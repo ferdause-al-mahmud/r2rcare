@@ -65,9 +65,9 @@ const ProductBehaviouralPage = () => {
         </div>
       </div>
       {/*  2nd Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center mt-20 md:mt-[150px]">
+      <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-16 items-center mt-20 md:mt-[150px]">
         {/* Left  */}
-        <div className="flex flex-col justify-center text-left">
+        <div className="flex flex-col justify-center text-left flex-1">
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-medium text-[#161C52] mb-4 capitalize">
             Do more than reviewing <br />
             isolated{" "}
@@ -87,7 +87,7 @@ const ProductBehaviouralPage = () => {
           </p>
         </div>
         {/*Right Content */}
-        <div className="flex justify-center relative">
+        <div className="flex justify-center relative flex-1">
           <div className="w-full max-w-[580px] h-full absolute mix-blend-hue bg-purple-200 rounded-md"></div>
 
           <div className="bg-[#EDE5FF] rounded-3xl p-6 md:p-8 lg:p-10 w-full max-w-[580px] shadow-sm">
@@ -136,9 +136,9 @@ const ProductBehaviouralPage = () => {
         </div>
       </div>
       {/*  4th Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center mt-20 md:mt-[150px]">
+      <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-16 items-center mt-20 md:mt-[150px]">
         {/* Left  */}
-        <div className="flex flex-col justify-center text-left">
+        <div className="flex flex-col justify-center text-left flex-1">
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-medium text-[#161C52] mb-4 capitalize">
             Suggested{" "}
             <span className="italic font-serif  text-[#77429A]">read</span>
@@ -163,7 +163,7 @@ const ProductBehaviouralPage = () => {
         </div>
 
         {/* Right  */}
-        <div className="flex justify-center relative">
+        <div className="flex justify-center relative  flex-1">
           <div className="w-full max-w-[580px] h-full absolute mix-blend-hue bg-purple-200 rounded-md"></div>
 
           <div className=" w-full max-w-[580px] shadow-sm">

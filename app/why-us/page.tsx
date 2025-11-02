@@ -65,9 +65,9 @@ const WhyUsPage = () => {
         </div>
       </div>
       {/* 2nd Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center mt-20 sm:mt-[150px]">
+      <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-16 items-center mt-20 md:mt-[150px]">
         {/* Left Image */}
-        <div className="flex flex-col justify-center text-left">
+        <div className="flex flex-col justify-center text-left flex-1">
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-medium text-[#161C52] mb-4 capitalize">
             Improved oversight
             <br /> and{" "}
@@ -88,7 +88,7 @@ const WhyUsPage = () => {
         </div>
 
         {/* Right Content */}
-        <div className="flex justify-center relative">
+        <div className="flex justify-center relative flex-1">
           <div className="w-full max-w-[580px] h-full absolute mix-blend-hue bg-purple-200 rounded-md"></div>
 
           <div className="bg-[#EDE5FF] rounded-3xl p-6 md:p-8 lg:p-10 w-full max-w-[580px] shadow-sm">

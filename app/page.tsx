@@ -8,7 +8,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="min-h-screen  font-sans">
+    <div className="min-h-screen font-sans">
       <Banner />
       <Growth />
       <Functionality />
