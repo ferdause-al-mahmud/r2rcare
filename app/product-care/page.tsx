@@ -57,9 +57,9 @@ const ProductCarePage = () => {
         </div>
       </div>
       {/*  1st Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center my-20">
+      <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-16 items-center mt-20 md:mt-[150px]">
         {/* Left  */}
-        <div className="flex flex-col justify-center text-left">
+        <div className="flex flex-col justify-center text-left flex-1">
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-[#161C52] mb-4 capitalize">
             Assign and <br /> track{" "}
             <span className="italic font-serif text-[#77429A] font-normal">
@@ -85,7 +85,7 @@ const ProductCarePage = () => {
           </div>
         </div>
         {/*Right Content */}
-        <div className="flex justify-center relative">
+        <div className="flex justify-center relative flex-1">
           <div className="w-full max-w-[580px] h-full absolute mix-blend-hue bg-purple-200 rounded-md"></div>
 
           <div className="bg-[#EDE5FF] rounded-3xl p-6 md:p-8 lg:p-10 w-full max-w-[580px] shadow-sm">
@@ -130,9 +130,9 @@ const ProductCarePage = () => {
         </div>
       </div>
       {/*  4th Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center my-20">
+      <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-16 items-center mt-20 md:mt-[150px]">
         {/* Left  */}
-        <div className="flex flex-col justify-center text-left">
+        <div className="flex flex-col justify-center text-left flex-1">
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-[#161C52] mb-4 capitalize">
             Create and organise <br /> client{" "}
             <span className="italic font-serif text-[#77429A] font-normal">
@@ -159,7 +159,7 @@ const ProductCarePage = () => {
         </div>
 
         {/* Right  */}
-        <div className="flex justify-center relative">
+        <div className="flex justify-center relative flex-1">
           <div className="w-full max-w-[580px] h-full absolute mix-blend-hue bg-purple-200 rounded-md"></div>
 
           <div className="bg-[#EDE5FF] w-full max-w-[580px]">
@@ -205,9 +205,9 @@ const ProductCarePage = () => {
         </div>
       </div>
       {/*  6th Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center my-20">
+      <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-16 items-center mt-20 md:mt-[150px]">
         {/* Left  */}
-        <div className="flex flex-col justify-center text-left">
+        <div className="flex flex-col justify-center text-left flex-1">
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-[#161C52] mb-4 capitalize">
             Breeze through
             <br />
@@ -223,7 +223,7 @@ const ProductCarePage = () => {
         </div>
 
         {/* Right  */}
-        <div className="flex justify-center relative bg-[#EDE5FF]">
+        <div className="flex justify-center relative bg-[#EDE5FF] flex-1">
           <div className="w-full max-w-[580px] h-full absolute mix-blend-hue bg-purple-200 rounded-md"></div>
 
           <div className=" w-full max-w-[580px]">
